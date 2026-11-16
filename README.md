@@ -113,7 +113,7 @@ Please keep each mini project self-contained with a short description and clear 
 ## Authors
 
 - **Devi Sri Parvathi Junjuri**: [GitHub](https://github.com/devisriparvathi-junjuri)
-- Collaborator: add name and GitHub link here
+- Collaborator: Purna Chandra Nandigana :[GitHub](https://github.com/purnanandiganaa-alt)
 
 ---
 
