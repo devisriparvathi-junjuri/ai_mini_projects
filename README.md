@@ -89,15 +89,25 @@ Supported file layouts:
 
 Labels can be `spam` / `ham` or `1` / `0`. Rows with a missing text or an unknown label are skipped with a warning, and each class needs at least 5 examples. On the full SMS Spam Collection (5,574 messages) this model reaches about 97% accuracy.
 
+### Running the tests
+
+The project has automated unit tests for the classifier and the custom dataset loader. They use Python's built-in `unittest`, so nothing extra needs to be installed. From the project folder run:
+
+```bash
+python -m unittest -v
+```
+
 ---
 
 ## Repository Structure
 
 ```text
 ai_mini_projects/
-├── spam_classifier.py   # Spam detection model + interactive demo
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
+├── spam_classifier.py        # Spam detection model + interactive demo
+├── test_spam_classifier.py   # Unit tests (python -m unittest)
+├── requirements.txt          # Python dependencies
+├── .gitignore                # Keeps caches and virtual environments out of Git
+└── README.md                 # Project documentation
 ```
 
 ---
@@ -118,7 +128,7 @@ ai_mini_projects/
 Contributions are welcome. To add a project or improvement:
 
 1. Create a branch: `git checkout -b feature/your-feature`
-2. Make your changes and commit them
+2. Make your changes, run `python -m unittest` to check that all tests pass, and commit them
 3. Push the branch and open a **pull request** against `main`
 
 Please keep each mini project self-contained with a short description and clear run instructions.
